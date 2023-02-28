@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="project_Java"
+       annotations="JDK" parallel="tests">
+
+    <test name="ParallelTest1">
+        <classes>
+            <class name="tests.selenuim.CheckoutOverviewTest"/>
+        </classes>
+    </test>
+    <test name="ParallelTest2">
+        <classes>
+            <class name="tests.selenuim.CheckoutFinishTest"/>
+        </classes>
+    </test>
+</suite>
